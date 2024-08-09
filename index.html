@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Vimora - Chemical and Fertilizer</title>
+
+		<!-- Link Configuration -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/swiper/swiper-bundle.min.css"
+		/>
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body class="bg-body">
+		<!-- Header -->
+		<header class="header d-flex flex-column">
+			<!-- Navbar -->
+			<nav class="navbar position-fixed z-3">
+				<div class="container">
+					<!-- Logo Image -->
+					<div class="brand-logo">
+						<img
+							src="./image/logo/logo(dark).png"
+							alt="Vimora Logo"
+							class="logo"
+							onclick="location.href='index.html'"
+						/>
+					</div>
+					<!-- Navbar Menu -->
+					<ul class="nav menu-container d-none d-lg-flex">
+						<li class="menu-item">
+							<a href="#" class="nav-link">Home</a>
+						</li>
+						<li class="menu-item">
+							<a href="#about" class="nav-link">About</a>
+						</li>
+						<li class="menu-item">
+							<a href="#mission" class="nav-link">Our Mission</a>
+						</li>
+						<li class="menu-item">
+							<a href="#product" class="nav-link">Product</a>
+						</li>
+						<li class="menu-item">
+							<a href="#service" class="nav-link">Service</a>
+						</li>
+						<li class="menu-item">
+							<a href="#contact" class="nav-link">Contact</a>
+						</li>
+					</ul>
+
+					<i
+						class="d-inline-sm d-lg-none fas fa-bars text-white"
+						onclick="toggleSidebar()"
+					></i>
+				</div>
+			</nav>
+			<!-- Hero Section -->
+			<section
+				class="hero-section d-flex justify-content-center align-items-center"
+			>
+				<div class="hero-content">
+					<h1 class="text-center ff-nunito">
+						Welcome <br />to <br />
+						Vimora Chemical and Fertilizer
+					</h1>
+					<p class="hero-text text-justify ff-open-sans">
+						we are leading manufacturer and supplier of various
+						types of fertilizers, catering to the agricultural
+						sector in India. With a strong focus on sustainability
+						and innovation, we offer a comprehensive range of
+						organic, bio, and chemical fertilizers that enhance crop
+						productivity, fertility, and soil health.
+					</p>
+					<button
+						type="button"
+						class="btn btn-primary d-flex m-auto contact-btn ff-open-sans"
+						onclick="location.href='#contact'"
+					>
+						Contact Us
+					</button>
+				</div>
+
+				<!-- Sidebar -->
+				<div class="sidebar border-1 show" id="sidebar">
+					<span class="close-btn" onclick="toggleSidebar()"
+						>&times;</span
+					>
+					<a href="#" class="nav-link">Home</a>
+					<a href="#about" class="nav-link">About</a>
+					<a href="#mission" class="nav-link">Our Mission</a>
+					<a href="#product" class="nav-link">Product</a>
+					<a href="#service" class="nav-link">Service</a>
+					<a href="#contact" class="nav-link">Contact</a>
+				</div>
+			</section>
+		</header>
+
+		<!-- About Section -->
+		<section
+			class="about-section d-flex py-5 px-2 border-top border-bottom border-secondary"
+			id="about"
+		>
+			<div class="about-content d-flex align-items-center my-5">
+				<!-- About Images -->
+				<div class="image-container">
+					<div class="about-image m-auto">
+						<img
+							src="./image/about-image1.jpg"
+							alt=""
+							class="inherit"
+						/>
+					</div>
+					<div class="about-image m-auto">
+						<img
+							src="./image/about-image2.jpg"
+							alt=""
+							class="inherit"
+						/>
+					</div>
+				</div>
+				<!-- About Content -->
+				<div class="content-text">
+					<div class="h1 about-heading ff-alata">About Us</div>
+					<p class="p ff-source-sans">
+						Our Owner Mr. Milan Barot is a passionate leader having
+						an education of bachelor of agriculture science and
+						having 8 years of massive experience in the field of
+						Micronutrients fertilizers across the India. He believes
+						that with quality products reaching farmers at the best
+						prices, the agricultural industry of the nation can be
+						given a remarkable boost. In a highly price sensitive
+						and commoditized space, VIMORA is clearly focused on
+						innovation and farmers centricity. VIMORA is poised to
+						transform itself to the next level in the life-cycle of
+						a manufacturing enterprise – providing complete
+						solutions as well as services in agricultural segment.
+						VIMORA is looking to be a game-changer and flip the way
+						fertilizer is consumed in the country by focusing on
+						creating high impact, crop-specific and value-added
+						combinations of fertilizers that would not only improve
+						the yield for the farmer but also enhance the quality of
+						the crop.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Our Mission Section -->
+		<section
+			class="our-mission d-flex align-items-center position-relative px-3"
+			id="mission"
+		>
+			<div
+				class="mission-content d-flex flex-row-reverse align-items-center justify-content-center"
+			>
+				<!-- Mission Image -->
+				<div class="image-container">
+					<img
+						src="./image/mission-image.jpg"
+						alt=""
+						class="d-flex inherit mission-image m-auto"
+					/>
+				</div>
+				<div class="content-text ms-auto">
+					<div class="h1 mission-heading ff-alata py-3">
+						Our Mission
+					</div>
+					<p class="p ff-source-sans">
+						Our mission is to empower farmers and promote
+						sustainable agriculture by providing high-quality
+						fertilizers and innovative solutions for enhanced crop
+						productivity, improved soil health and environmental
+						stewardship.
+					</p>
+					<ul class="list-content ff-source-sans">
+						<li>
+							Boosting crop productivity by providing quality
+							plant nutrients
+						</li>
+						<li>Promoting sustainable agricultural practices</li>
+						<li>Creating sustainable rural development in India</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<!-- Our Vision Section -->
+		<section
+			class="our-vision text-center border-top border-bottom border-secondary d-flex flex-column align-items-center justify-content-around"
+		>
+			<h1 class="ff-alata">Our Vision</h1>
+			<p class="h2 ff-merriweather-sans">
+				“ To be a global corporation that empowers and enriches farming
+				communities by providing the best agro solutions ”
+			</p>
+			<div class="dots d-flex mx-auto">
+				<div class="dot rounded-circle"></div>
+				<div class="dot rounded-circle"></div>
+				<div class="dot rounded-circle"></div>
+			</div>
+		</section>
+
+		<!-- VIMORA Slogan Section -->
+		<section
+			class="vimora-slogan text-center p-4 mt-3 d-flex flex-column align-items-center justify-content-around"
+		>
+			<h1 class="ff-alata py-4">Core Values</h1>
+			<h1 class="ff-merriweather-sans h2">
+				“ Good manufacturing process leads to good product, good
+				products lead to a good income of the farmers ”
+			</h1>
+		</section>
+
+		<!-- Core Value Section -->
+		<section
+			class="core-value d-flex mt-5 align-items-center border-bottom border-secondary py-5"
+		>
+			<!-- Value Chart Image -->
+			<img
+				src="./image/core-value-chart.png"
+				alt=""
+				class="rounded-2 value-chart"
+			/>
+
+			<div class="value-chain p-4">
+				<h1 class="text-start ff-open-sans">Value Chain</h1>
+				<p class="p ff-source-sans m-auto">
+					The agriculture value chain involves several key stages: It
+					starts with <strong>Inputs</strong>, which include all
+					resources needed for farming such as seeds, fertilizers, and
+					machinery. The next stage is <strong>Production</strong>,
+					where crops are grown and livestock is raised. This is
+					followed by <strong>Processing</strong>, where the raw
+					products are transformed into food products or other usable
+					goods through activities like cleaning, packaging, and
+					converting raw materials into finished products. The
+					<strong>Marketing</strong> stage comes next, where the
+					products are marketed and sold to retailers, wholesalers, or
+					directly to consumers, involving advertising and
+					distribution. Finally, the value chain ends with
+					<strong>Consumption</strong>, the stage where the products
+					are purchased and used by consumers.
+				</p>
+			</div>
+		</section>
+
+		<!-- Product Section -->
+		<section
+			class="our-product p-4"
+			id="product"
+			style="width: 100%; margin: auto"
+		>
+			<div class="product-content">
+				<h3 class="text-center ff-alata">Our Products</h3>
+				<p class="p px-2 ff-source-sans">
+					The company is one of the leading manufacturers of Mixture
+					of Micronutrients, Bio & Organic fertilizers and specialty
+					fertilizers in India. The company under its flagship brand
+					VIMORA, manufactures high quality Mixture of Micronutrients,
+					specialty and water-soluble fertilizers. It offers a basket
+					of 28 products which include bulk, differentiated
+					fertilizers, specialty fertilizers, water soluble
+					fertilizers, Mixture of micro nutrients and secondary
+					nutrients, catering to farmer’s every crop nutrient
+					requirement.
+				</p>
+			</div>
+
+			<!-- Organic Fertilizer Product Slider -->
+			<span class="h5 text-secondary d-block p-2"
+				>Organic Fertilizer</span
+			>
+			<div id="cardSlider" class="carousel slide" data-bs-ride="carousel">
+				<div class="carousel-inner">
+					<!-- Cards will be dynamically added here via JavaScript -->
+				</div>
+				<button
+					class="carousel-control-prev"
+					type="button"
+					data-bs-target="#cardSlider"
+					data-bs-slide="prev"
+				>
+					<span
+						class="carousel-control-prev-icon"
+						aria-hidden="true"
+					></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button
+					class="carousel-control-next"
+					type="button"
+					data-bs-target="#cardSlider"
+					data-bs-slide="next"
+				>
+					<span
+						class="carousel-control-next-icon"
+						aria-hidden="true"
+					></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+		</section>
+
+		<!-- Service Section -->
+		<section
+			class="our-service border-top border-secondary p-4"
+			id="service"
+		>
+			<div
+				class="content d-flex flex-column justify-content-center align-items-center"
+			>
+				<h1 class="my-4 ff-alata">Our Service</h1>
+				<p class="p ff-source-sans">
+					Our dedicated Technical Services team provides support and
+					render advice on products and its applications. Our
+					dedicated technical services team provides due assistance in
+					usage, handling and application of our products as a
+					partner.
+				</p>
+				<!-- Service Info Container -->
+				<div
+					class="service-container d-flex flex-wrap justify-content-center mt-5"
+				>
+					<div
+						class="service-card p-3 border rounded-2 bg-white text-secondary"
+					>
+						<div class="service-icon">
+							<img
+								src="./image/svg/technical-support.svg"
+								alt=""
+								class="inherit m-auto"
+							/>
+						</div>
+						<div class="service-name text-center ff-source-sans">
+							Technical Support
+						</div>
+					</div>
+					<div
+						class="service-card p-3 border rounded-2 bg-white text-secondary"
+					>
+						<div class="service-icon">
+							<img
+								src="./image/svg/guidance.svg"
+								alt=""
+								class="inherit m-auto"
+							/>
+						</div>
+						<div class="service-name text-center ff-source-sans">
+							Application Guidance
+						</div>
+					</div>
+					<div
+						class="service-card p-3 border rounded-2 bg-white text-secondary"
+					>
+						<div class="service-icon">
+							<img
+								src="./image/svg/consultant-support.svg"
+								alt=""
+								class="inherit m-auto"
+							/>
+						</div>
+						<div class="service-name text-center ff-source-sans">
+							Usage Assistance
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Contact Us Section -->
+		<section
+			class="contact-us d-flex p-4 border-top border-secondary"
+			id="contact"
+		>
+			<!-- Contact Form -->
+			<div class="contact-form d-flex">
+				<form
+					action="https://formcarry.com/s/gG9fy9q1jLY"
+					method="POST"
+					class="inherit my-4"
+				>
+					<fieldset>
+						<legend class="h1 text-center my-4 ff-alata">
+							Contact Us
+						</legend>
+						<div class="row mt-3">
+							<div class="col-sm-12 col-md-6 mt-2">
+								<input
+									type="text"
+									id="fname"
+									name="fname"
+									class="form-control py-3 px-2 ff-source-sans"
+									placeholder="First Name"
+									required
+								/>
+							</div>
+							<div class="col-sm-12 col-md-6 mt-2">
+								<input
+									type="text"
+									id="lname"
+									name="lname"
+									class="form-control py-3 px-2 ff-source-sans"
+									placeholder="Last Name"
+									required
+								/>
+							</div>
+						</div>
+						<div class="row mt-3">
+							<div class="col-12">
+								<input
+									type="tel"
+									id="phone"
+									name="phone"
+									class="form-control py-3 px-2 ff-source-sans"
+									placeholder="Phone Number"
+									required
+								/>
+							</div>
+						</div>
+						<div class="row mt-3">
+							<div class="col-12">
+								<input
+									type="email"
+									id="email"
+									name="email"
+									class="form-control py-3 px-2 ff-source-sans"
+									placeholder="Email"
+									required
+								/>
+							</div>
+						</div>
+						<div class="mt-3">
+							<div class="col-12">
+								<textarea
+									class="form-control py-3 px-2 ff-source-sans"
+									id="message"
+									name="message"
+									placeholder="Write Message here...."
+									rows="4"
+								></textarea>
+							</div>
+						</div>
+						<div class="mt-3 d-flex">
+							<button
+								class="btn btn-dark text-white m-auto py-3 px-5 rounded-pill"
+								type="submit"
+							>
+								Submit
+							</button>
+						</div>
+					</fieldset>
+				</form>
+			</div>
+
+			<!-- Map Integration -->
+			<div class="location-container">
+				<iframe
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3663.260052996844!2d72.3629779863455!3d23.342591250051026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395c3c686d00f9d7%3A0x46685dfa0bdda389!2sKadi%20-%20Nandasan%20Rd%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1721107367098!5m2!1sen!2sin"
+					style="border: 0"
+					allowfullscreen=""
+					loading="lazy"
+					referrerpolicy="no-referrer-when-downgrade"
+					class="company-location"
+				></iframe>
+			</div>
+		</section>
+
+		<!-- Contact Info Section -->
+		<section
+			class="contact-info d-flex justify-content-around border-top border-secondary"
+		>
+			<!-- Company Mail -->
+			<div
+				class="info d-flex flex-column justify-content-center text-center"
+				onclick="location.href=`mailto:vimorafertilizer414@gmail.com`"
+			>
+				<i class="fa-solid fa-envelope fs-1"></i>
+				<span class="ff-nunito">vimorafertilizer414@gmail.com</span>
+			</div>
+			<!-- Company Phone Number -->
+			<div
+				class="info d-flex flex-column justify-content-center text-center"
+				onclick="location.href=`tel:8140671602`"
+			>
+				<i class="fa-solid fa-phone fs-1"></i>
+				<span class="ff-nunito">+91 8140671602</span>
+			</div>
+
+			<!-- Company Address -->
+			<div
+				role="link"
+				class="info d-flex flex-column justify-content-center text-center"
+				onclick="window.open('https://maps.app.goo.gl/ETfYoFz645c5Aqjy8', '_blank')"
+			>
+				<i class="fa-solid fa-location-dot fs-1"></i>
+				<span class="ff-nunito">
+					Survey no 434, Small Centre Untva Cross Road, Kadi -
+					Nandasan Road, Gujarat – 382715
+				</span>
+			</div>
+		</section>
+
+		<!-- Footer Section -->
+		<footer
+			class="footer text-center bg-dark text-white pt-3 border-top ff-merriweather-sans"
+		>
+			<div
+				class="follow-us d-flex flex-column align-items-center mb-4 border-bottom py-3"
+			>
+				<h3 class="ff-alata mb-3">Follow Us</h3>
+				<ul class="nav justify-content-center">
+					<li class="mx-3 fs-3">
+						<a href="#" class="brand-icon text-white"
+							><i class="fa-brands fa-instagram"></i
+						></a>
+					</li>
+					<li class="mx-3 fs-3">
+						<a href="#" class="brand-icon text-white"
+							><i class="fa-brands fa-facebook"></i
+						></a>
+					</li>
+					<li class="mx-3 fs-3">
+						<a href="#" class="brand-icon text-white"
+							><i class="fa-brands fa-youtube"></i
+						></a>
+					</li>
+					<li class="mx-3 fs-3">
+						<a href="#" class="brand-icon text-white"
+							><i class="fa-brands fa-twitter"></i
+						></a>
+					</li>
+				</ul>
+			</div>
+			<div
+				class="d-flex content-container mx-auto justify-content-around py-3"
+			>
+				<!-- Company Logo -->
+				<div class="mb-4 footer-logo">
+					<img
+						src="./image/logo/logo(dark).png"
+						alt="Logo"
+						class="img-fluid"
+					/>
+					<span class="text-start d-none d-lg-block">
+						“ Good manufacturing process leads to good product, good
+						products lead to a good income of the farmers ”
+					</span>
+				</div>
+				<!-- Quick Link -->
+				<div class="quick-links mx-3">
+					<h4>Quick Links</h4>
+					<ul class="nav flex-column">
+						<li>
+							<a href="#" class="text-white link">Home</a>
+						</li>
+						<li>
+							<a href="#about" class="text-white link">About</a>
+						</li>
+						<li>
+							<a href="#mission" class="text-white link"
+								>Our Mission</a
+							>
+						</li>
+						<li>
+							<a href="#product" class="text-white link"
+								>Product</a
+							>
+						</li>
+						<li>
+							<a href="#service" class="text-white link"
+								>Service</a
+							>
+						</li>
+						<li>
+							<a href="#contact" class="text-white link"
+								>Contact</a
+							>
+						</li>
+					</ul>
+				</div>
+
+				<!-- Company Contact Information -->
+				<div class="contact-info-container mx-3">
+					<h4 class="mb-3 text-start">Contact Info</h4>
+					<ul
+						class="nav flex-column text-start"
+						style="max-width: 350px; gap: 10px"
+					>
+						<li>
+							<a
+								href="mailto:vimorafertilizer414@gmail.com"
+								class="text-white link"
+								target="_blank"
+								><i class="fa-solid fa-envelope"></i>
+								vimorafertilizer414@gmail.com</a
+							>
+						</li>
+						<li>
+							<a
+								href="tel:8140671602"
+								class="text-white link"
+								target="_blank"
+								><i class="fa-solid fa-phone"></i> +91
+								8140671602</a
+							>
+						</li>
+						<li>
+							<a
+								href="https://maps.app.goo.gl/ETfYoFz645c5Aqjy8"
+								class="text-white link"
+								target="_blank"
+								><i class="fa-solid fa-location-dot"></i> Survey
+								no 434, Small Centre Untva Cross Road, Kadi -
+								Nandasan Road</a
+							>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- Copyright Content -->
+			<div class="border-top py-3">
+				© 2024 Vimora. All rights reserved
+			</div>
+		</footer>
+
+		<!-- Script Configuration -->
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="./js/script.js"></script>
+	</body>
+</html>
