@@ -20,38 +20,77 @@ document.addEventListener("DOMContentLoaded", function () {
 	// Card Data Array
 	const cardData = [
 		{
-			image: "./image/product/bio/bio-npk.jpg",
-			title: "Bio NPK",
+			image: "../image/product/mixture/vimora-zinc.jpg",
+			title: "VIMORA Shresth High Zinc",
 			description:
-				"Bio NPK is an eco-friendly fertilizer that enhances plant growth by providing essential nutrients in a natural form. It promotes healthy root development, increases nutrient uptake, and improves soil fertility, leading to higher yields and sustainable farming practices.",
+				"Contains multi-micronutrients: Zinc, Manganese, Iron, Copper, Boron, and Molybdenum. Helps the plant tolerate diseases and drought. Improves fruit setting, quality produce, and higher yield. Soluble in water and compatible with pesticides, fungicides, nutrient sprays, and plant growth regulators.",
 		},
 		{
-			image: "./image/product/bio/mycorrhizal.jpg",
-			title: "Mycorrhizal",
+			image: "../image/product/micronutrient/zinc-sulphate-monohydrate.jpg",
+			title: "Zinc Sulphate Monohydrate / Zinc Sulphate Heptahydrate",
 			description:
-				"Mycorrhizal is a beneficial fungal inoculant that forms symbiotic relationships with plant roots. It enhances water and nutrient absorption, improves soil structure, and boosts plant resilience against environmental stress. This natural solution supports robust plant growth and higher crop productivity.",
+				"Zinc is essential for all types of crops and fruits, improving soil quality and crop yield. Regulates pH in soil, promotes early green coloration in leaves, and enhances fruit yields. Fortifies plant resilience against cold weather and improves water holding capacity.",
 		},
 		{
-			image: "./image/product/bio/prom.jpg",
+			image: "../image/product/micronutrient/ferrous-sulphate.jpg",
+			title: "Ferrous Sulphate",
+			description:
+				"Iron is essential for photosynthesis, chlorophyll formation, and various enzymatic reactions. Corrects chlorosis (yellowing of leaves) and supports normal growth and high-quality yields. Suitable for all crops with iron deficiency.",
+		},
+		{
+			image: "../image/product/micronutrient/manganese-sulphate.jpg",
+			title: "Manganese Sulphate",
+			description:
+				"Water-soluble salt containing magnesium and sulphur. Important for photosynthesis, chlorophyll production, and plant resilience. Enhances seed germination, nutrient absorption, and improves crop quality.",
+		},
+		{
+			image: "../image/product/micronutrient/boron.jpg",
+			title: "Boron",
+			description:
+				"Essential for plant development, growth, and seed development. Helps with water and nutrient transfer, pollination, and cell division. Maintains sugar-starch balance and translocates carbohydrates.",
+		},
+		{
+			image: "../image/product/micronutrient/copper-sulphate.jpg",
+			title: "Copper Sulphate",
+			description:
+				"Used as a fertilizer or fungicide. Essential for plant growth and controlling fungus and mold. Helps prevent chlorosis and stunted growth, and improves sugar content and flavor in fruits.",
+		},
+		{
+			image: "../image/product/micronutrient/zinc-oxide.jpg",
+			title: "Zinc Oxide Suspension",
+			description:
+				"Zinc is vital for chlorophyll formation and growth regulation. Helps resist cold temperatures and correct zinc deficiency. Highly stable with a long shelf life and compatible with various nutrients and fertilizers.",
+		},
+		{
+			image: "../image/product/micronutrient/boron-ethanolamine.jpg",
+			title: "Boron Ethanolamine",
+			description:
+				"Boron aids in plant development, growth, and crop yielding. Important for pollination, cell division, and nutrient balance. Helps maintain sugar-starch balance and translocates carbohydrates.",
+		},
+		{
+			image: "../image/product/micronutrient/calcium-concentrate.jpg",
+			title: "Liquid Calcium",
+			description:
+				"Concentrated liquid calcium boosts root and leaf growth. Maintains good grain and fruit quality, and minimizes disorders. Enhances overall plant health and productivity.",
+		},
+		{
+			image: "../image/product/bio/prom.jpg",
 			title: "PROM",
 			description:
-				"PROM is a high-quality organic fertilizer rich in phosphorus. It is specially designed to improve soil health and fertility, promoting vigorous plant growth. This environmentally friendly product aids in the development of strong root systems and enhances the overall productivity of crops.",
+				"Phosphate Rich Organic Manure (PROM) is an eco-friendly fertilizer that improves soil properties, balances pH, and enhances soil fertility. Boosts crop resistance against diseases and increases yield by improving fruit size and root expansion.",
 		},
-		// {
-		// 	image: "./image/background/hero-image.jpg",
-		// 	title: "Card Title 4",
-		// 	description: "Card description 4",
-		// },
-		// {
-		// 	image: "./image/background/hero-image.jpg",
-		// 	title: "Card Title 5",
-		// 	description: "Card description 5",
-		// },
-		// {
-		// 	image: "./image/background/hero-image.jpg",
-		// 	title: "Card Title 6",
-		// 	description: "Card description 6",
-		// },
+		{
+			image: "../image/product/bio/bio-npk.jpg",
+			title: "Bio NPK",
+			description:
+				"Premium Bio-NPK is a microbial formulation that fixes atmospheric nitrogen, solubilizes phosphate, and mobilizes potash. Converts non-available forms of micronutrients into available forms. Increases drought tolerance and reduces disease risks.",
+		},
+		{
+			image: "../image/product/bio/mycorrhizal.jpg",
+			title: "Mycorrhiza VAM",
+			description:
+				"Premium VAM SHAKTI is an eco-friendly granular biofertilizer containing Mycorrhizal fungi. Enhances nutrient transfer, phosphate uptake, and mobilizes immobile micronutrients. Promotes root development and improves resistance against environmental and soil-borne stresses.",
+		},
 	];
 
 	const cardSliderInner = document.querySelector(".carousel-inner");

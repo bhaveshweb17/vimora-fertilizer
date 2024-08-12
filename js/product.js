@@ -1,117 +1,379 @@
-document.addEventListener("DOMContentLoaded", function () {
-	const products = {
-		micronutrients: [
-			{
-				id: "VMCF02",
-				name: "Zinc Sulphate Monohydrate / Zinc Sulphate Heptahydrate",
-				image: "../image/product/micronutrient/zinc-sulphate.jpg",
+document.addEventListener("DOMContentLoaded", () => {
+	// Simulated product data
+	const products = [
+		{
+			id: "VMCF01",
+			category: "Mixture of Micronutrient",
+			name: "VIMORA Shresth High Zinc",
+			description:
+				"Contains multi-micronutrients: Zinc, Manganese, Iron, Copper, Boron, and Molybdenum (as per Gazette notification by State Fertilizer Committees). Helps the plant tolerate diseases and drought. Improves fruit setting, quality produce, and higher yield. Soluble in water and compatible with pesticides, fungicides, nutrient sprays, and plant growth regulators.",
+			benefit: [
+				"Improves the quality and quantity of the yield.",
+				"Provides resistance to pests and disease.",
+				"Maintains overall health, growth, and development of crops.",
+			],
+			application: ["Soil Application", "Fertigation"],
+			dosage: "Apply 5 - 10 kg of Multiplex Srushti (Zinc High) or Dharti per acre.",
+			customization:
+				"Can be customized for export based on customer needs.",
+			target: "Used in all crops.",
+			link: "https://vimora-fertilizer.netlify.app/product.html?product_id=VMCF01",
+			image: "./image/product/mixture/vimora-zinc.jpg",
+		},
+		{
+			id: "VMCF02",
+			name: "Zinc Sulphate Monohydrate / Zinc Sulphate Heptahydrate",
+			types: [
+				{
+					type: "zinc sulphate monohydrate",
+					concentration: "33%",
+					description:
+						"Zinc is essential for all types of crops and fruits, improving soil quality and crop yield. It forms tetrahedral complexes with Nitrogen, Oxygen, and Sulphur, which is vital for plant growth.",
+					benefits: [
+						"Increases crop yields.",
+						"Regulates pH in soil.",
+						"Promotes early green coloration in leaves and increased fruit yields.",
+						"Fortifies plant resilience against cold weather.",
+						"Improves fruit appearance and reduces deformities.",
+						"Increases water holding capacity and reduces drought incidence.",
+					],
+					application: "soil application",
+					dosage: "10 kg/acre",
+					target: "all crops",
+					link: "https://vimora-fertilizer.netlify.app/product.html?product_id=VMCF02",
+					image: "./image/product/micronutrient/zinc-sulphate.jpg",
+				},
+				{
+					type: "zinc sulphate heptahydrate",
+					concentration: "21%",
+					description:
+						"Effective for treating mineral deficiencies in plants, especially Zinc. Suitable for various crops including cereals, pulses, oilseeds, cotton, and vegetables.",
+					application: "soil application",
+					dosage: "10 kg/acre",
+					target: "all crops",
+					link: "https://vimora-fertilizer.netlify.app/product.html?product_id=VMCF02",
+					image: "./image/product/micronutrient/zinc-sulphate.jpg",
+				},
+			],
+		},
+		{
+			id: "VMCF03",
+			name: "Ferrous Sulphate",
+			concentration: "19%",
+			description:
+				"Iron is essential for photosynthesis, chlorophyll formation, and various enzymatic reactions. Corrects chlorosis (yellowing of leaves) and supports normal growth and high-quality yields.",
+			benefits: [
+				"Essential for photosynthesis and carbohydrate breakdown.",
+				"Supports normal growth and high-quality yields.",
+				"Suitable for all crops and plants with iron deficiency.",
+				"Fights pests and fungus due to sulphur content.",
+				"Promotes chlorophyll production and energy transfers.",
+			],
+			application: ["fertigation", "drip irrigation"],
+			dosage: "10-20 kgs/acre as basal dose or top dressing",
+			target: "all crops",
+			link: "https://vimora-fertilizer.netlify.app/product.html?product_id=VMCF03",
+			image: "./image/product/micronutrient/ferrous-sulphate.jpg",
+		},
+		{
+			id: "VMCF04",
+			name: "Manganese Sulphate",
+			concentration: "9.5% magnesium, 12% sulphur",
+			description:
+				"Water-soluble salt formulation containing magnesium and sulphur. Important for photosynthesis, chlorophyll production, and plant resilience. Helps in seed germination and nutrient absorption.",
+			benefits: [
+				"Increases number, size, and quality of crops.",
+				"Improves grain size, weight, and shine in oil crops.",
+				"Enhances size, lustre, and taste in fruits and vegetables.",
+				"Increases bud formation and production.",
+				"Improves fertilizer availability and disease resistance.",
+				"Enhances leaf texture and chlorophyll.",
+				"Improves resilience in low water conditions.",
+				"Maintains normal plant growth.",
+			],
+			application: [
+				"spray/foliar application",
+				"fertigation/drip irrigation",
+			],
+			dosage: {
+				soilApplication: "10 kg/acre",
+				spray: "1 kg/acre",
 			},
-			{
-				id: "VMCF03",
-				name: "Ferrous Sulphate",
-				image: "../image/product/micronutrient/ferrous-sulphate.jpg",
+			target: "all crops",
+			link: "https://vimora-fertilizer.netlify.app/product.html?product_id=VMCF04",
+			image: "./image/product/micronutrient/manganese-sulphate.jpg",
+		},
+		{
+			id: "VMCF05",
+			name: "Boron",
+			concentration: "20%",
+			description:
+				"Essential for plant development, growth, and seed development. Helps in water and nutrient transfer, and is important for pollination and cell division.",
+			benefits: [
+				"Supports pollination and seed production.",
+				"Necessary for cell division, nitrogen metabolism, and protein formation.",
+				"Helps maintain sugar-starch balance and translocates carbohydrates.",
+			],
+			application: ["spray/foliar application", "fertigation"],
+			dosage: {
+				maizeSugarcanePotatoChilliesGroundnut: "2-3 kg/acre",
+				carrotOnionCucurbitsTomato: "3-4 kg/acre",
+				spinachCauliflowerMustardTurnipRadish: "4-5 kg/acre",
+				fruits: "5-6 kg/acre",
 			},
-			{
-				id: "VMCF04",
-				name: "Manganese Sulphate",
-				image: "../image/product/micronutrient/manganese-sulphate.jpg",
+			target: "all crops",
+			packing: ["250ml", "500ml", "1ltr"],
+			link: "https://vimora-fertilizer.netlify.app/product.html?product_id=VMCF05",
+			image: "./image/product/micronutrient/boron.jpg",
+		},
+		{
+			id: "VMCF06",
+			name: "Copper Sulphate",
+			concentration: "24%",
+			description:
+				"Used as a fertilizer or fungicide, copper is essential for plant growth and controlling fungus and mold. Helps prevent chlorosis and stunted growth.",
+			benefits: [
+				"Prevents fungal infections and diseases.",
+				"Improves sugar content and flavor in fruits.",
+				"Helps in controlling deficiencies and enhancing plant growth.",
+			],
+			application: ["foliar application", "drip application"],
+			dosage: "500 gm to 1 kg/acre",
+			target: "all crops",
+			link: "https://vimora-fertilizer.netlify.app/product.html?product_id=VMCF06",
+			image: "./image/product/micronutrient/copper-sulphate.jpg",
+		},
+		{
+			id: "VMCF07",
+			name: "Zinc Oxide Suspension",
+			concentration: "39.5%",
+			description:
+				"Zinc is vital for chlorophyll formation and growth regulation. Helps in resisting cold temperatures and correcting zinc deficiency.",
+			benefits: [
+				"Highly stable with long shelf life.",
+				"High zinc concentration and easy to dilute.",
+				"Compatible with various nutrients, fertilizers, and fungicides.",
+				"Can be used from seedling to mid-season applications.",
+			],
+			application: ["foliar spray", "drip irrigation"],
+			dosage: {
+				initialSpray: "1-1.5 ml per liter of water",
+				firstSpray: "After 20-30 days of sowing/transplantation",
+				secondSpray: "25-50 days after first spray",
+				thirdSpray: "At blooming/flowering/pruning",
 			},
-			{
-				id: "VMCF05",
-				name: "Boron",
-				image: "../image/product/micronutrient/boron.jpg",
+			target: "pulses, cereals, fruits, vegetables, flowers, citrus, sugar beet, cotton, oil seeds, medicinal plants",
+			packing: ["100ml", "250ml", "500ml", "1ltr"],
+			link: "https://vimora-fertilizer.netlify.app/product.html?product_id=VMCF07",
+			image: "./image/product/micronutrient/zinc-oxide.jpg",
+		},
+		{
+			id: "VMCF08",
+			name: "Boron Ethanolamine",
+			concentration: "10.5%",
+			description:
+				"Boron helps with plant development, growth, and crop yielding. Important for pollination, cell division, and nutrient balance.",
+			benefits: [
+				"Supports pollination and seed production.",
+				"Necessary for cell division, nitrogen metabolism, and protein formation.",
+				"Helps maintain sugar-starch balance and translocates carbohydrates.",
+			],
+			application: ["spray/foliar application", "fertigation"],
+			dosage: {
+				maizeSugarcanePotatoChilliesGroundnut: "2-3 kg/acre",
+				carrotOnionCucurbitsTomato: "3-4 kg/acre",
+				spinachCauliflowerMustardTurnipRadish: "4-5 kg/acre",
+				fruits: "5-6 kg/acre",
 			},
-			{
-				id: "VMCF06",
-				name: "Copper Sulphate",
-				image: "../image/product/micronutrient/copper-sulphate.jpg",
+			target: "all crops",
+			packing: ["250ml", "500ml", "1ltr"],
+			link: "https://vimora-fertilizer.netlify.app/product.html?product_id=VMCF08",
+			image: "./image/product/micronutrient/boron-ethanolamine.jpg",
+		},
+		{
+			id: "VMCF09",
+			name: "Liquid Calcium",
+			concentration: "11%",
+			description:
+				"Concentrated liquid calcium boosts root, leaf growth, and yield. Maintains good grain and fruit quality, and minimizes disorders.",
+			benefits: [
+				"Boosts root and leaf growth.",
+				"Maintains grain and fruit quality.",
+				"Minimizes disorders.",
+			],
+			application: ["foliar spray", "irrigation/fertilization system"],
+			dosage: "1.5-2 ml per liter of water",
+			specifications: {
+				calciumContent: "11%",
+				pH: "9.5±1%",
+				specificGravity: "1.3 to 1.4 kg/L",
 			},
-			{
-				id: "VMCF07",
-				name: "Zinc Oxide Suspension",
-				image: "../image/product/micronutrient/zinc-oxide-suspension.jpg",
+			target: "all crops",
+			packing: ["250ml", "500ml", "1ltr"],
+			link: "https://vimora-fertilizer.netlify.app/products.html?product_id=VMCF09",
+			image: "./image/product/micronutrient/calcium-concentrate.jpg",
+		},
+		{
+			id: "VMCF10",
+			name: "PROM",
+			description:
+				"Phosphate Rich Organic Manure and eco-friendly organic fertilizer. Contains organic phosphorus that is slowly made available to plants without stabilization.",
+			benefits: [
+				"Improves physical, chemical, and biological properties of soil.",
+				"Increases microorganism activity in the soil.",
+				"Balances soil pH by increasing organic carbon.",
+				"Enhances soil fertility and root expansion of crops.",
+				"Builds crop resistance against diseases.",
+				"Eco-friendly and beneficial for organic farming.",
+				"Increases yield by improving fruit size.",
+			],
+			application: "soil application",
+			dosage: "5-10 kg/acre",
+			target: "all crops",
+			link: "https://vimora-fertilizer.netlify.app/product.html?product_id=VMCF010",
+			image: "./image/product/bio/prom.jpg",
+		},
+		{
+			id: "VMCF11",
+			name: "Bio NPK",
+			description:
+				"Premium Bio-NPK is a microbial formulation that fixes atmospheric nitrogen, solubilizes phosphate, and mobilizes potash. Converts non-available forms of micronutrients into available forms.",
+			benefits: [
+				"Fixes atmospheric nitrogen and makes it available to plants.",
+				"Solubilizes unavailable forms of phosphate.",
+				"Mobilizes leftover potash in the soil.",
+				"Increases drought tolerance of plants.",
+				"Reduces risk of disease infestations.",
+			],
+			application: "soil application",
+			dosage: "2-4 kg/acre",
+			target: "all crops",
+			link: "https://vimora-fertilizer.netlify.app/product.html?product_id=VMCF11",
+			image: "./image/product/bio/bio-npk.jpg",
+		},
+		{
+			id: "VMCF12",
+			name: "Mycorrhiza VAM",
+			description:
+				"Premium VAM SHAKTI is an eco-friendly granular biofertilizer containing Mycorrhizal fungi. Enhances nutrient transfer, phosphate uptake, and mobilizes immobile micronutrients.",
+			specifications: {
+				technicalName: "Vesicular Arbuscular Mycorrhiza (VAM)",
+				purpose:
+					"Improving Phosphorous and Micronutrient Uptake in Plants",
+				dosage: "4 kg/acre",
+				cfuCount: "100 propagules per gm",
+				sku: "4 kg",
 			},
-		],
-		bio_fertilizers: [
-			{
-				id: "VMBF01",
-				name: "PROM",
-				image: "../image/product/bio/prom.jpg",
-			},
-			{
-				id: "VMBF02",
-				name: "Bio NPK",
-				image: "../image/product/bio/bio-npk.jpg",
-			},
-			{
-				id: "VMBF03",
-				name: "Mycorrhiza VAM",
-				image: "../image/product/bio/mycorrhizal.jpg",
-			},
-		],
-	};
-
-	const carouselInner = document.querySelector(".suggested-product");
-
-	// Function to get the number of items per slide based on screen size
-	function getItemsPerSlide() {
-		if (window.innerWidth >= 1200) return 5; // Extra large screens
-		if (window.innerWidth >= 992) return 4; // Large screens
-		if (window.innerWidth >= 768) return 3; // Medium screens
-		return 2; // Small screens
-	}
-
-	// Function to generate random suggestions
-	function getRandomProducts() {
-		let allProducts = [
-			...products.micronutrients,
-			...products.bio_fertilizers,
-		];
-		let shuffled = allProducts.sort(() => 0.5 - Math.random());
-		return shuffled.slice(0, 15); // Get 15 products to ensure we have enough for multiple slides
-	}
-
-	// Function to create product card HTML
-	function createProductCard(product) {
-		return `
-			<div class="col">
-				<div class="card h-100 border-0">
-					<a href="product-details.html?id=${product.id}" class="product-link link">
-						<img src="${product.image}" alt="${product.name}" class="card-img-top suggested-product-image" />
-						<div class="card-body">
-							<h5 class="card-title text-center text-dark medium-font ff-source-sans">${product.name}</h5>
-						</div>
-					</a>
-				</div>
-			</div>
-		`;
-	}
-
-	// Function to create carousel slides
-	function createCarouselSlides(products) {
-		const itemsPerSlide = getItemsPerSlide();
-		let slides = [];
-		for (let i = 0; i < products.length; i += itemsPerSlide) {
-			const slideItems = products
-				.slice(i, i + itemsPerSlide)
-				.map(createProductCard)
-				.join("");
-			slides.push(
-				`<div class="carousel-item ${
-					i === 0 ? "active" : ""
-				}"><div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 g-4">${slideItems}</div></div>`
-			);
+			benefits: [
+				"Enhanced nutrient uptake of phosphorus, nitrogen, and micronutrients.",
+				"Increased plant growth and yield by promoting root development.",
+				"Improved resistance against abiotic stresses (drought, salinity, heavy metals).",
+				"Improved resistance against biotic stresses (soil-borne fungal pathogens, nematodes).",
+			],
+			application: "soil application",
+			target: "all crops",
+			link: "https://vimora-fertilizer.netlify.app/product.html?product_id=VMCF12",
+			image: "./image/product/bio/mycorrhizal.jpg",
+		},
+		// Add more products as needed
+	];
+	// Define categories based on product IDs
+	function getCategory(productId) {
+		if (productId.startsWith("VMCF01")) {
+			return "Mixture of Micronutrient";
+		} else if (
+			[
+				"VMCF02",
+				"VMCF03",
+				"VMCF04",
+				"VMCF05",
+				"VMCF06",
+				"VMCF07",
+				"VMCF08",
+				"VMCF09",
+			].includes(productId)
+		) {
+			return "Micronutrient";
+		} else if (["VMCF10", "VMCF11", "VMCF12"].includes(productId)) {
+			return "Bio Fertilizer";
+		} else {
+			return "Unknown Category"; // Default category
 		}
-		return slides.join("");
 	}
 
-	// Insert product cards into the DOM
-	function displaySuggestedProducts() {
-		const randomProducts = getRandomProducts();
-		carouselInner.innerHTML = createCarouselSlides(randomProducts);
+	function loadProductData(productId) {
+		const product = products.find((p) => p.id === productId);
+		if (product) {
+			document.querySelector(".product-image").src = product.image;
+			document.querySelector(".product-data h5").textContent =
+				product.name;
+			document.querySelector(".product-data span").textContent =
+				product.description;
+
+			// Set the category based on product ID
+			const category = getCategory(productId);
+			document.querySelector(".category").textContent = category;
+
+			const benefitList = document.querySelector(".product-data ul");
+			benefitList.innerHTML =
+				'<span class="text-secondary mini-font fw-semibold">Benefits</span>';
+			product.benefits.forEach((benefit) => {
+				const li = document.createElement("li");
+				li.textContent = benefit;
+				benefitList.appendChild(li);
+			});
+
+			const specTableBody = document.querySelector(
+				".product-specification tbody"
+			);
+			specTableBody.innerHTML = "";
+
+			// Add the details to the table
+			Object.entries(product).forEach(([key, value]) => {
+				if (
+					key !== "id" &&
+					key !== "name" &&
+					key !== "description" &&
+					key !== "benefits" &&
+					key !== "link" &&
+					key !== "image"
+				) {
+					const tr = document.createElement("tr");
+
+					let displayValue;
+					if (typeof value === "object") {
+						if (Array.isArray(value)) {
+							displayValue = value.join("<br/>");
+						} else {
+							displayValue = Object.entries(value)
+								.map(
+									([subKey, subValue]) =>
+										`${subKey.replace(
+											/([A-Z])/g,
+											" $1"
+										)}: ${subValue}`
+								)
+								.join("<br/>");
+						}
+					} else {
+						displayValue = value;
+					}
+
+					tr.innerHTML = `<td class="data">${key.replace(
+						/([A-Z])/g,
+						" $1"
+					)}</td><td class="data">${displayValue}</td>`;
+					specTableBody.appendChild(tr);
+				}
+			});
+		} else {
+			console.error("Product not found!");
+		}
 	}
 
-	// Initialize the carousel and handle resizing
-	displaySuggestedProducts();
-	window.addEventListener("resize", displaySuggestedProducts);
+	// Example: Fetch the product_id from URL parameters or any other source
+	const urlParams = new URLSearchParams(window.location.search);
+	const productId = urlParams.get("product_id") || "VMCF05"; // Default to 'VMCF05' if no parameter is found
+
+	loadProductData(productId);
 });

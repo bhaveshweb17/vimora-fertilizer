@@ -1,5 +1,6 @@
 .product-image {
 	max-height: 400px;
+	max-width: 100%;
 }
 
 .mini-font {
@@ -27,7 +28,10 @@
 .product-card {
 	width: 15%;
 } */
-
+.data,
+tr {
+	text-transform: capitalize !important;
+}
 .product-card-container {
 	display: flex;
 	flex-wrap: wrap;
