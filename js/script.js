@@ -4,7 +4,9 @@ window.addEventListener("scroll", () => {
 	// You can adjust the scroll position threshold as needed
 	if (window.scrollY > 0) {
 		navbar.style.background = "rgba(0,0,0,.95)";
+		navbar.classList.add("position-fixed");
 	} else {
+		navbar.classList.remove("position-fixed");
 		navbar.style.background = ""; // Reset to original background
 	}
 });
@@ -18,19 +20,19 @@ document.addEventListener("DOMContentLoaded", function () {
 	// Card Data Array
 	const cardData = [
 		{
-			image: "./image/product/bio-npk.jpg",
+			image: "./image/product/bio/bio-npk.jpg",
 			title: "Bio NPK",
 			description:
 				"Bio NPK is an eco-friendly fertilizer that enhances plant growth by providing essential nutrients in a natural form. It promotes healthy root development, increases nutrient uptake, and improves soil fertility, leading to higher yields and sustainable farming practices.",
 		},
 		{
-			image: "./image/product/mycorrhizal.jpg",
+			image: "./image/product/bio/mycorrhizal.jpg",
 			title: "Mycorrhizal",
 			description:
 				"Mycorrhizal is a beneficial fungal inoculant that forms symbiotic relationships with plant roots. It enhances water and nutrient absorption, improves soil structure, and boosts plant resilience against environmental stress. This natural solution supports robust plant growth and higher crop productivity.",
 		},
 		{
-			image: "./image/product/prom.jpg",
+			image: "./image/product/bio/prom.jpg",
 			title: "PROM",
 			description:
 				"PROM is a high-quality organic fertilizer rich in phosphorus. It is specially designed to improve soil health and fertility, promoting vigorous plant growth. This environmentally friendly product aids in the development of strong root systems and enhances the overall productivity of crops.",

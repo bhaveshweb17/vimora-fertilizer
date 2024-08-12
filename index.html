@@ -46,8 +46,142 @@
 						<li class="menu-item">
 							<a href="#mission" class="nav-link">Our Mission</a>
 						</li>
-						<li class="menu-item">
-							<a href="#product" class="nav-link">Product</a>
+						<!-- Product Dropdown -->
+						<li class="dropdown">
+							<a
+								class="nav-link dropdown-toggle"
+								type="button"
+								id="dropdownMenuButton"
+								data-bs-toggle="dropdown"
+								aria-expanded="false"
+							>
+								Products
+							</a>
+							<ul
+								class="dropdown-menu bg-dark"
+								aria-labelledby="dropdownMenuButton"
+							>
+								<li>
+									<a
+										class="dropdown-item text-white"
+										href="#"
+									>
+										Mixture &raquo;
+									</a>
+									<ul
+										class="dropdown-menu dropdown-submenu bg-dark"
+									>
+										<li>
+											<a
+												class="dropdown-item text-white"
+												href="#"
+												>VIMORA Shresth High Zinc</a
+											>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a
+										class="dropdown-item text-white"
+										href="#"
+									>
+										Micronutrients &raquo;
+									</a>
+									<ul
+										class="dropdown-menu dropdown-submenu bg-dark"
+									>
+										<li>
+											<a
+												class="dropdown-item text-white"
+												href="#"
+												>Zinc Sulphate Monohydrate
+											</a>
+										</li>
+										<li>
+											<a
+												class="dropdown-item text-white"
+												href="#"
+												>Ferrous Sulphate</a
+											>
+										</li>
+										<li>
+											<a
+												class="dropdown-item text-white"
+												href="#"
+												>Manganese Sulphate
+											</a>
+										</li>
+										<li>
+											<a
+												class="dropdown-item text-white"
+												href="#"
+												>Boron</a
+											>
+										</li>
+										<li>
+											<a
+												class="dropdown-item text-white"
+												href="#"
+												>Copper Sulphate</a
+											>
+										</li>
+										<li>
+											<a
+												class="dropdown-item text-white"
+												href="#"
+												>Zinc Oxide Suspension
+											</a>
+										</li>
+										<li>
+											<a
+												class="dropdown-item text-white"
+												href="#"
+												>Borron ethanolamine
+											</a>
+										</li>
+										<li>
+											<a
+												class="dropdown-item text-white"
+												href="#"
+												>Calcium concentrates
+											</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a
+										class="dropdown-item text-white"
+										href="#"
+									>
+										Organic and Bio Fertilizer &raquo;
+									</a>
+									<ul
+										class="dropdown-menu dropdown-submenu bg-dark"
+									>
+										<li>
+											<a
+												class="dropdown-item text-white"
+												href="#"
+												>PROM</a
+											>
+										</li>
+										<li>
+											<a
+												class="dropdown-item text-white"
+												href="#"
+												>Bio NPK</a
+											>
+										</li>
+										<li>
+											<a
+												class="dropdown-item text-white"
+												href="#"
+												>Mycorrhiza VAM
+											</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
 						</li>
 						<li class="menu-item">
 							<a href="#service" class="nav-link">Service</a>
@@ -63,6 +197,7 @@
 					></i>
 				</div>
 			</nav>
+
 			<!-- Hero Section -->
 			<section
 				class="hero-section d-flex justify-content-center align-items-center"
@@ -97,8 +232,121 @@
 					<a href="#" class="nav-link">Home</a>
 					<a href="#about" class="nav-link">About</a>
 					<a href="#mission" class="nav-link">Our Mission</a>
-					<a href="#product" class="nav-link">Product</a>
-					<a href="#service" class="nav-link">Service</a>
+
+					<!-- Product Dropdown -->
+					<div class="dropdown ff-open-sans">
+						<a
+							class="nav-link dropdown-toggle d-block text-center"
+							href="#product"
+							id="productDropdown"
+							role="button"
+							data-bs-toggle="collapse"
+							data-bs-target="#productDropdownMenu"
+							aria-expanded="false"
+						>
+							Products
+						</a>
+						<div class="collapse" id="productDropdownMenu">
+							<!-- Nested Dropdown for Mixture -->
+							<div class="dropdown">
+								<a
+									class="link text-white dropdown-toggle"
+									href="#"
+									id="mixtureDropdown"
+									role="button"
+									data-bs-toggle="collapse"
+									data-bs-target="#mixtureDropdownMenu"
+									aria-expanded="false"
+								>
+									Mixture
+								</a>
+								<div class="collapse" id="mixtureDropdownMenu">
+									<a href="#" class="link text-white"
+										>VIMORA Shresth High Zinc</a
+									>
+								</div>
+							</div>
+
+							<!-- Nested Dropdown for Micronutrients -->
+							<div class="dropdown">
+								<a
+									class="link text-white dropdown-toggle"
+									href="#"
+									id="micronutrientsDropdown"
+									role="button"
+									data-bs-toggle="collapse"
+									data-bs-target="#micronutrientsDropdownMenu"
+									aria-expanded="false"
+								>
+									Micronutrients
+								</a>
+								<div
+									class="collapse"
+									id="micronutrientsDropdownMenu"
+								>
+									<a href="#" class="link text-white"
+										>Zinc Sulphate Monohydrate</a
+									>
+									<a href="#" class="link text-white"
+										>Ferrous Sulphate</a
+									>
+									<a href="#" class="link text-white"
+										>Manganese Sulphate</a
+									>
+									<a href="#" class="link text-white"
+										>Boron</a
+									>
+									<a href="#" class="link text-white"
+										>Copper Sulphate</a
+									>
+									<a href="#" class="link text-white"
+										>Zinc Oxide Suspension</a
+									>
+									<a href="#" class="link text-white"
+										>Boron Ethanolamine</a
+									>
+									<a href="#" class="link text-white"
+										>Calcium Concentrates</a
+									>
+								</div>
+							</div>
+
+							<!-- Nested Dropdown for Organic and Bio Fertilizer -->
+							<div class="dropdown">
+								<a
+									class="link text-white dropdown-toggle"
+									href="#"
+									id="organicDropdown"
+									role="button"
+									data-bs-toggle="collapse"
+									data-bs-target="#organicDropdownMenu"
+									aria-expanded="false"
+								>
+									Organic and Bio Fertilizer
+								</a>
+								<div class="collapse" id="organicDropdownMenu">
+									<a href="#" class="link text-white">PROM</a>
+									<a href="#" class="dropdown-item"
+										>Bio NPK</a
+									>
+									<a href="#" class="link text-white"
+										>Mycorrhiza VAM</a
+									>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="dropdown">
+						<a
+							class="nav-link"
+							href="#service"
+							id="serviceDropdown"
+						>
+							Service
+						</a>
+					</div>
+
 					<a href="#contact" class="nav-link">Contact</a>
 				</div>
 			</section>
@@ -226,7 +474,7 @@
 		>
 			<!-- Value Chart Image -->
 			<img
-				src="./image/core-value-chart.png"
+				src="./image/core-value.jpg"
 				alt=""
 				class="rounded-2 value-chart"
 			/>
@@ -234,21 +482,8 @@
 			<div class="value-chain p-4">
 				<h1 class="text-start ff-open-sans">Value Chain</h1>
 				<p class="p ff-source-sans m-auto">
-					The agriculture value chain involves several key stages: It
-					starts with <strong>Inputs</strong>, which include all
-					resources needed for farming such as seeds, fertilizers, and
-					machinery. The next stage is <strong>Production</strong>,
-					where crops are grown and livestock is raised. This is
-					followed by <strong>Processing</strong>, where the raw
-					products are transformed into food products or other usable
-					goods through activities like cleaning, packaging, and
-					converting raw materials into finished products. The
-					<strong>Marketing</strong> stage comes next, where the
-					products are marketed and sold to retailers, wholesalers, or
-					directly to consumers, involving advertising and
-					distribution. Finally, the value chain ends with
-					<strong>Consumption</strong>, the stage where the products
-					are purchased and used by consumers.
+					At Vimora Fertilizer, our core values are the foundation of our success. We believe in <strong>People</strong>—valuing each team member’s contributions and fostering a supportive environment. <strong>Innovation</strong> drives us to constantly seek new and improved methods for product enhancement. <strong>Teamwork</strong> ensures we achieve our goals by leveraging each other’s strengths. We build <strong>Trust</strong> through transparency and integrity. Our commitment to <strong>Responsibility</strong> is evident in our sustainable practices and impact on the community. Finally, we uphold the highest standards of <strong>Quality</strong> in all our products, ensuring exceptional value for our customers.
+				</p>
 				</p>
 			</div>
 		</section>

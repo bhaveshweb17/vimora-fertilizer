@@ -1,0 +1,267 @@
+{
+	"Mixture": {
+		"id": "VMCF01",
+		"category": "Mixture of Micronutrient",
+		"name": "VIMORA Shresth High Zinc",
+		"description": "Contains multi-micronutrients: Zinc, Manganese, Iron, Copper, Boron, and Molybdenum (as per Gazette notification by State Fertilizer Committees). Helps the plant tolerate diseases and drought. Improves fruit setting, quality produce, and higher yield. Soluble in water and compatible with pesticides, fungicides, nutrient sprays, and plant growth regulators.",
+		"benefit": [
+			"Improves the quality and quantity of the yield.",
+			"Provides resistance to pests and disease.",
+			"Maintains overall health, growth, and development of crops."
+		],
+		"application": ["Soil Application", "Fertigation"],
+		"dosage": "Apply 5 - 10 kg of Multiplex Srushti (Zinc High) or Dharti per acre.",
+		"customization": "Can be customized for export based on customer needs.",
+		"target": "Used in all crops.",
+		"link": "https://vimora-fertilizer.netlify.app/products/mixture.html",
+		"image": "../image/product/mixture/vimora-zinc.jpg"
+	},
+	"micronutrients": [
+		{
+			"id": "VMCF02",
+			"name": "Zinc Sulphate Monohydrate / Zinc Sulphate Heptahydrate",
+			"types": [
+				{
+					"type": "zinc sulphate monohydrate",
+					"concentration": "33%",
+					"description": "Zinc is essential for all types of crops and fruits, improving soil quality and crop yield. It forms tetrahedral complexes with Nitrogen, Oxygen, and Sulphur, which is vital for plant growth.",
+					"benefits": [
+						"Increases crop yields.",
+						"Regulates pH in soil.",
+						"Promotes early green coloration in leaves and increased fruit yields.",
+						"Fortifies plant resilience against cold weather.",
+						"Improves fruit appearance and reduces deformities.",
+						"Increases water holding capacity and reduces drought incidence."
+					],
+					"application": "soil application",
+					"dosage": "10 kg/acre",
+					"target": "all crops",
+					"link": "https://vimora-fertilizer.netlify.app/products/micronutrient.html?product_id=VMCF02",
+					"image": "../image/product/micronutrient/zinc-sulphate.jpg"
+				},
+				{
+					"type": "zinc sulphate heptahydrate",
+					"concentration": "21%",
+					"description": "Effective for treating mineral deficiencies in plants, especially Zinc. Suitable for various crops including cereals, pulses, oilseeds, cotton, and vegetables.",
+					"application": "soil application",
+					"dosage": "10 kg/acre",
+					"target": "all crops",
+					"link": "https://vimora-fertilizer.netlify.app/products/micronutrient.html?product_id=VMCF02",
+					"image": "../image/product/micronutrient/zinc-sulphate.jpg"
+				}
+			]
+		},
+		{
+			"id": "VMCF03",
+			"name": "Ferrous Sulphate",
+			"concentration": "19%",
+			"description": "Iron is essential for photosynthesis, chlorophyll formation, and various enzymatic reactions. Corrects chlorosis (yellowing of leaves) and supports normal growth and high-quality yields.",
+			"benefits": [
+				"Essential for photosynthesis and carbohydrate breakdown.",
+				"Supports normal growth and high-quality yields.",
+				"Suitable for all crops and plants with iron deficiency.",
+				"Fights pests and fungus due to sulphur content.",
+				"Promotes chlorophyll production and energy transfers."
+			],
+			"application": ["fertigation", "drip irrigation"],
+			"dosage": "10-20 kgs/acre as basal dose or top dressing",
+			"target": "all crops",
+			"link": "https://vimora-fertilizer.netlify.app/products/micronutrient.html?product_id=VMCF03",
+			"image": "../image/product/micronutrient/ferrous-sulphate.jpg"
+		},
+		{
+			"id": "VMCF04",
+			"name": "Manganese Sulphate",
+			"concentration": "9.5% magnesium, 12% sulphur",
+			"description": "Water-soluble salt formulation containing magnesium and sulphur. Important for photosynthesis, chlorophyll production, and plant resilience. Helps in seed germination and nutrient absorption.",
+			"benefits": [
+				"Increases number, size, and quality of crops.",
+				"Improves grain size, weight, and shine in oil crops.",
+				"Enhances size, lustre, and taste in fruits and vegetables.",
+				"Increases bud formation and production.",
+				"Improves fertilizer availability and disease resistance.",
+				"Enhances leaf texture and chlorophyll.",
+				"Improves resilience in low water conditions.",
+				"Maintains normal plant growth."
+			],
+			"application": [
+				"spray/foliar application",
+				"fertigation/drip irrigation"
+			],
+			"dosage": {
+				"soilApplication": "10 kg/acre",
+				"spray": "1 kg/acre"
+			},
+			"target": "all crops",
+			"link": "https://vimora-fertilizer.netlify.app/products/micronutrient.html?product_id=VMCF04",
+			"image": "../image/product/micronutrient/manganese-sulphate.jpg"
+		},
+		{
+			"id": "VMCF05",
+			"name": "Boron",
+			"concentration": "20%",
+			"description": "Essential for plant development, growth, and seed development. Helps in water and nutrient transfer, and is important for pollination and cell division.",
+			"benefits": [
+				"Supports pollination and seed production.",
+				"Necessary for cell division, nitrogen metabolism, and protein formation.",
+				"Helps maintain sugar-starch balance and translocates carbohydrates."
+			],
+			"application": ["spray/foliar application", "fertigation"],
+			"dosage": {
+				"maizeSugarcanePotatoChilliesGroundnut": "2-3 kg/acre",
+				"carrotOnionCucurbitsTomato": "3-4 kg/acre",
+				"spinachCauliflowerMustardTurnipRadish": "4-5 kg/acre",
+				"fruits": "5-6 kg/acre"
+			},
+			"target": "all crops",
+			"packing": ["250ml", "500ml", "1ltr"],
+			"link": "https://vimora-fertilizer.netlify.app/products/micronutrient.html?product_id=VMCF05",
+			"image": "../image/product/micronutrient/boron.jpg"
+		},
+		{
+			"id": "VMCF06",
+			"name": "Copper Sulphate",
+			"concentration": "24%",
+			"description": "Used as a fertilizer or fungicide, copper is essential for plant growth and controlling fungus and mold. Helps prevent chlorosis and stunted growth.",
+			"benefits": [
+				"Prevents fungal infections and diseases.",
+				"Improves sugar content and flavor in fruits.",
+				"Helps in controlling deficiencies and enhancing plant growth."
+			],
+			"application": ["foliar application", "drip application"],
+			"dosage": "500 gm to 1 kg/acre",
+			"target": "all crops",
+			"link": "https://vimora-fertilizer.netlify.app/products/micronutrient.html?product_id=VMCF06",
+			"image": "../image/product/micronutrient/copper-sulphate.jpg"
+		},
+		{
+			"id": "VMCF07",
+			"name": "Zinc Oxide Suspension",
+			"concentration": "39.5%",
+			"description": "Zinc is vital for chlorophyll formation and growth regulation. Helps in resisting cold temperatures and correcting zinc deficiency.",
+			"benefits": [
+				"Highly stable with long shelf life.",
+				"High zinc concentration and easy to dilute.",
+				"Compatible with various nutrients, fertilizers, and fungicides.",
+				"Can be used from seedling to mid-season applications."
+			],
+			"application": ["foliar spray", "drip irrigation"],
+			"dosage": {
+				"initialSpray": "1-1.5 ml per liter of water",
+				"firstSpray": "After 20-30 days of sowing/transplantation",
+				"secondSpray": "25-50 days after first spray",
+				"thirdSpray": "At blooming/flowering/pruning"
+			},
+			"target": "pulses, cereals, fruits, vegetables, flowers, citrus, sugar beet, cotton, oil seeds, medicinal plants",
+			"packing": ["100ml", "250ml", "500ml", "1ltr"],
+			"link": "https://vimora-fertilizer.netlify.app/products/micronutrient.html?product_id=VMCF07",
+			"image": "../image/product/micronutrient/zinc-oxide.jpg"
+		},
+		{
+			"id": "VMCF08",
+			"name": "Boron Ethanolamine",
+			"concentration": "10.5%",
+			"description": "Boron helps with plant development, growth, and crop yielding. Important for pollination, cell division, and nutrient balance.",
+			"benefits": [
+				"Supports pollination and seed production.",
+				"Necessary for cell division, nitrogen metabolism, and protein formation.",
+				"Helps maintain sugar-starch balance and translocates carbohydrates."
+			],
+			"application": ["spray/foliar application", "fertigation"],
+			"dosage": {
+				"maizeSugarcanePotatoChilliesGroundnut": "2-3 kg/acre",
+				"carrotOnionCucurbitsTomato": "3-4 kg/acre",
+				"spinachCauliflowerMustardTurnipRadish": "4-5 kg/acre",
+				"fruits": "5-6 kg/acre"
+			},
+			"target": "all crops",
+			"packing": ["250ml", "500ml", "1ltr"],
+			"link": "https://vimora-fertilizer.netlify.app/products/bio-fertilizer.html?product_id=VMCF08",
+			"image": "../image/product/micronutrient/boron-ethanolamine.jpg"
+		},
+		{
+			"id": "VMCF09",
+			"name": "Liquid Calcium",
+			"concentration": "11%",
+			"description": "Concentrated liquid calcium boosts root, leaf growth, and yield. Maintains good grain and fruit quality, and minimizes disorders.",
+			"benefits": [
+				"Boosts root and leaf growth.",
+				"Maintains grain and fruit quality.",
+				"Minimizes disorders."
+			],
+			"application": ["foliar spray", "irrigation/fertilization system"],
+			"dosage": "1.5-2 ml per liter of water",
+			"specifications": {
+				"calciumContent": "11%",
+				"pH": "9.5±1%",
+				"specificGravity": "1.3 to 1.4 kg/L"
+			},
+			"target": "all crops",
+			"packing": ["250ml", "500ml", "1ltr"],
+			"link": "https://vimora-fertilizer.netlify.app/products/micronutrient.html?product_id=VMCF09",
+			"image": "../image/product/micronutrient/calcium-concentrate.jpg"
+		}
+	],
+	"organicFertilizers": [
+		{
+			"id": "VMCF010",
+			"name": "PROM",
+			"description": "Phosphate Rich Organic Manure and eco-friendly organic fertilizer. Contains organic phosphorus that is slowly made available to plants without stabilization.",
+			"benefits": [
+				"Improves physical, chemical, and biological properties of soil.",
+				"Increases microorganism activity in the soil.",
+				"Balances soil pH by increasing organic carbon.",
+				"Enhances soil fertility and root expansion of crops.",
+				"Builds crop resistance against diseases.",
+				"Eco-friendly and beneficial for organic farming.",
+				"Increases yield by improving fruit size."
+			],
+			"application": "soil application",
+			"dosage": "5-10 kg/acre",
+			"target": "all crops",
+			"link": "https://vimora-fertilizer.netlify.app/products/organic-fertilizer.html?product_id=VMCF010",
+			"image": "../image/product/bio/prom.jpg"
+		}
+	],
+	"bioFertilizers": [
+		{
+			"id": "VMCF11",
+			"name": "Bio NPK",
+			"description": "Premium Bio-NPK is a microbial formulation that fixes atmospheric nitrogen, solubilizes phosphate, and mobilizes potash. Converts non-available forms of micronutrients into available forms.",
+			"benefits": [
+				"Fixes atmospheric nitrogen and makes it available to plants.",
+				"Solubilizes unavailable forms of phosphate.",
+				"Mobilizes leftover potash in the soil.",
+				"Increases drought tolerance of plants.",
+				"Reduces risk of disease infestations."
+			],
+			"application": "soil application",
+			"dosage": "2-4 kg/acre",
+			"target": "all crops",
+			"link": "https://vimora-fertilizer.netlify.app/products/bio-fertilizer.html?product_id=VMCF11",
+			"image": "../image/product/bio/bio-npk.jpg"
+		},
+		{
+			"id": "VMCF12",
+			"name": "Mycorrhiza VAM",
+			"description": "Premium VAM SHAKTI is an eco-friendly granular biofertilizer containing Mycorrhizal fungi. Enhances nutrient transfer, phosphate uptake, and mobilizes immobile micronutrients.",
+			"specifications": {
+				"technicalName": "Vesicular Arbuscular Mycorrhiza (VAM)",
+				"purpose": "Improving Phosphorous and Micronutrient Uptake in Plants",
+				"dosage": "4 kg/acre",
+				"cfuCount": "100 propagules per gm",
+				"sku": "4 kg"
+			},
+			"benefits": [
+				"Enhanced nutrient uptake of phosphorus, nitrogen, and micronutrients.",
+				"Increased plant growth and yield by promoting root development.",
+				"Improved resistance against abiotic stresses (drought, salinity, heavy metals).",
+				"Improved resistance against biotic stresses (soil-borne fungal pathogens, nematodes)."
+			],
+			"application": "soil application",
+			"target": "all crops",
+			"link": "https://vimora-fertilizer.netlify.app/products/bio-fertilizer.html?product_id=VMCF12",
+			"image": "../image/product/micronutrient/mycorrhiza.jpg"
+		}
+	]
+}
