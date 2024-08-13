@@ -31,20 +31,30 @@ document.addEventListener("DOMContentLoaded", function () {
 				name: "Zinc Oxide Suspension",
 				image: "../image/product/micronutrient/zinc-oxide-suspension.jpg",
 			},
+			{
+				id: "VMCF08",
+				name: "Boron Ethanolamine",
+				image: "../image/product/micronutrient/boron-ethanolamine.jpg",
+			},
+			{
+				id: "VMCF09",
+				name: "Liquid Calcium",
+				image: "../image/product/micronutrient/liquid-calcium.jpg",
+			},
 		],
 		bio_fertilizers: [
 			{
-				id: "VMBF01",
+				id: "VMCF10",
 				name: "PROM",
 				image: "../image/product/bio/prom.jpg",
 			},
 			{
-				id: "VMBF02",
+				id: "VMCF11",
 				name: "Bio NPK",
 				image: "../image/product/bio/bio-npk.jpg",
 			},
 			{
-				id: "VMBF03",
+				id: "VMCF12",
 				name: "Mycorrhiza VAM",
 				image: "../image/product/bio/mycorrhizal.jpg",
 			},
@@ -74,9 +84,9 @@ document.addEventListener("DOMContentLoaded", function () {
 	// Function to create product card HTML
 	function createProductCard(product) {
 		return `
-			<div class="col">
-				<div class="card h-100 border-0">
-					<a href="product-details.html?id=${product.id}" class="product-link link">
+			<div class="col bg-none">
+				<div class="card h-100 border-0 bg-none">
+					<a href="product.html?product_id=${product.id}" class="product-link link">
 						<img src="${product.image}" alt="${product.name}" class="card-img-top suggested-product-image" />
 						<div class="card-body">
 							<h5 class="card-title text-center text-dark medium-font ff-source-sans">${product.name}</h5>
